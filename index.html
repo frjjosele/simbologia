@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content=" buscador de simbología eléctrica">
+     <link rel="shortcut icon" href="https://www.plcmadrid.es/wp-content/uploads/2019/03/xplc_32x32.png.pagespeed.ic.hvw9oE1ycy.png" type="image/x-icon"/>
+     <title>Simbología</title>
+</head>
+<body>
+     <header class="header">
+          <img class="header__img" src="./images/logo.png" alt="Logo PLC madrid">
+     </header>
+     <section class="main">
+          <h2 class="main__title">¿Qué símbolo quieres buscar?</h2>
+          <select class="main__select" name="simbolos" id="simbolos" onchange="loadDoc(this.value)">
+               <option value="-1">Buscar ...</option>
+               <option value="0">Interruptor</option>
+               <option value="1">Interruptor Bipolar</option>
+          </select>
+     </section>
+     <div id="demo"></div>
+     <script src="./js/simbolos.js"></script>
+     <script src="./js/inicio.js"></script>
+</body>
+</html>
