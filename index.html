@@ -13,13 +13,48 @@
      </header>
      <section class="main">
           <h2 class="main__title">¿Qué símbolo quieres buscar?</h2>
-          <select class="main__select" name="simbolos" id="simbolos" onchange="loadDoc(this.value)">
+          <select class="main__select" name="selectSimbolos" id="selecSimbolos" onchange="loadDoc(this.value)">
                <option value="-1">Buscar ...</option>
                <option value="0">Interruptor</option>
                <option value="1">Interruptor Bipolar</option>
           </select>
      </section>
-     <div id="demo"></div>
+     <h3 id="descripcion" class="categories__title">Description</h3>
+
+     <section id="carousel">
+          <div class="carousel__container">
+               <div class="carousel-item" id="carousel-item-mecanismo">
+                    <img id="img-mecanismo" class="carousel-item__img" src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt="mecanismo"  />
+                    <div class="carousel-item__details">
+                      <p id="title-mecanismo" class="carousel-item__details--title">Mecanismo</p>
+                  </div>
+               </div>
+               <div class="carousel-item" id="carousel-item-unifilar">
+                    <img id="img-unifilar" class="carousel-item__img" src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt=""  />
+                    <div class="carousel-item__details">
+                      <p id="title-unifilar" class="carousel-item__details--title">Unifilar</p>
+                  </div>
+               </div>
+               <div class="carousel-item" id="carousel-item-multifilar">
+                    <img id="img-multifilar" class="carousel-item__img" src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt="mecanismo"  />
+                    <div class="carousel-item__details">
+                      <p id="title-multifilar" class="carousel-item__details--title">Multifilar</p>
+                  </div>
+               </div>
+               <div class="carousel-item" id="carousel-item-condiciones">
+
+                    <p id="img-condiciones" class="carousel-item__img"></p>
+                    <div class="carousel-item__details">
+                      <p id="title-condiciones" class="carousel-item__details--title">Condiciones</p>
+                  </div>
+               </div>
+          </div>
+<!--          <div id="mecanismo" class="simbolos__general"></div>
+         <div id="unifilar" class="simbolos__general"></div>
+         <div id="multifilar" class="simbolos__general"></div>
+         <div id="condiciones" class="simbolos__general"></div> -->
+     </section>
+
      <script src="./js/simbolos.js"></script>
      <script src="./js/inicio.js"></script>
 </body>
