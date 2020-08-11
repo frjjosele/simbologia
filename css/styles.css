@@ -1,0 +1,232 @@
+:root{
+     --main-naranja:#ec661c;
+     --main-azul:#2196d4;
+     --main-morado:#b337e8;
+     --main-rojo:#e7383d;
+     --main-amarillo:#dddc09;
+     --main-verde:#77bd22;
+}
+
+body {
+     margin: 0;
+     font-family: 'Muli', sans-serif;
+     background: #8f57fd;
+   }
+
+   * {
+     box-sizing: border-box;
+   }
+
+
+   .header {
+     align-items: center;
+     background: #8f57fd;
+     height: 50px;
+     top: 0px;
+     width: 100%;
+   }
+   
+   .header__img {
+     margin-left: 30px;
+     width: 200px;
+   }
+
+
+   .main {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     height: 200px;
+     border-radius: 0px 0px 40px 40px;
+   }
+   
+   .main__title {
+     color: white;
+     font-size: 25px;
+   }
+
+
+
+
+   
+   .categories__title {
+     background: #8f57fd;
+     color: white;
+     font-size: 19px;
+     margin-top: -16px;
+     position: absolute;
+     padding-left: 30px;
+     width: 100%;
+   }
+   
+
+   .carousel {
+ /*     overflow: scroll; */
+     padding-left: 30px;
+     width: 100%;
+     position: relative;
+   }
+
+   .carousel__container {
+/*      transition: 450ms -webkit-transform;
+     transition: 450ms transform;
+     transition: 450ms transform, 450ms -webkit-transform; */
+     font-size: 0;
+/*      white-space: nowrap;
+ */     margin: 70px 0px;
+     padding-bottom: 10px;
+     display: flex;
+     justify-content: center;
+   }
+
+   .carousel__container:hover .carousel-item {
+ /*     opacity: 0.3; */
+   }
+   
+   .carousel__container:hover .carousel-item:hover {
+/*      -webkit-transform: scale(1.5);
+             transform: scale(1.5);
+     opacity: 1; */
+   }
+   .carousel-item {
+     border-radius: 20px;
+     border: 3px solid;
+     width: 250px;
+     
+     overflow: hidden;
+/*      position: relative;
+     display: inline-block; */
+     background-color: white;
+     margin-right: 10px;
+     font-size: 20px;
+     cursor: pointer;
+     transition: 450ms all;
+/*      
+     -webkit-transform-origin: center left;
+             transform-origin: center left; */
+   }
+   
+/*    .carousel-item:hover ~ .carousel-item {
+     -webkit-transform: translate3d(100px, 0, 0);
+             transform: translate3d(100px, 0, 0);
+   } */
+   
+   .carousel-item__img {
+     width: 200px;
+     display: block;
+     margin: auto;
+     -o-object-fit: cover;
+        object-fit: cover;
+   }
+   
+   .carousel-item__details{
+     text-align: center;
+   }
+
+   .carousel-item__details--title{
+     text-decoration: underline;
+   }
+
+
+
+  #carousel-item-condiciones {
+    width: 40%;
+    color: var(--main-azul);
+    border-color: var(--main-azul);
+  }
+
+  #carousel-item-condiciones >p{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+  }
+
+
+  #carousel-item-mecanismo{
+    color: var(--main-naranja);
+    border-color: var(--main-naranja);
+  }
+
+#carousel-item-unifilar{
+  color: var(--main-verde);
+  border-color: var(--main-verde);
+}
+
+ 
+#carousel-item-multifilar{
+  color: var(--main-rojo);
+  border-color: var(--main-rojo);
+}
+
+ 
+
+
+/* moviles  y tabletas vertical*/
+@media only screen and (max-width: 768px ) {
+  .main__title {
+    font-size: 22px;
+  }
+  .header__img {
+    margin-left: 10px;
+    width: 150px;
+  }
+  .carousel {
+    width: 100%;
+    background-color: white;
+    padding-left: initial;
+  }
+  .carousel__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .carousel-item {
+    width:100%;
+    font-size: 20px;
+    cursor: pointer;
+    border:initial;
+    border-radius: initial;
+  }
+
+    .carousel-item__details--title{
+      margin-top: 10px;
+      margin-bottom:10px;
+      padding-top:20px;
+      padding-bottom: 20px;
+      color: white;
+      text-decoration: none;
+    }
+  
+  #carousel-item-condiciones {
+    width: 100%;
+  }
+  #title-mecanismo{
+    background: var(--main-naranja);
+    margin-top: initial;
+  }
+  #title-unifilar{
+    background: var(--main-verde);
+    
+  }
+  #title-multifilar{
+    background: var(--main-rojo);
+  }
+  #title-condiciones{
+    background: var(--main-azul);
+  }
+
+}
+
+ 
+/* tableta horizontal */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .carousel__container{
+    flex-wrap: wrap;
+  }
+
+  #carousel-item-condiciones{
+    width: 80%;
+    margin-top: 20px;
+  }
+}
