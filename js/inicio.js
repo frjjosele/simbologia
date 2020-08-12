@@ -24,15 +24,8 @@ function loadDoc(event){
   imagenes=encontrarImg($carouselitemMultifilar);
   imagenes.src=simbolos[event].multifilar;
 
- 
-
-/*   $carouselItemMecanismo.firstElementChild.src=simbolos[event].mecanismo;
-  $carouselitemUnifilar.firstElementChild.src=simbolos[event].unifilar;
-  $carouselitemMultifilar.firstElementChild.src=simbolos[event].multifilar;
-  console.log($carouselItemCondiciones.firstElementChild); */
-  $carouselItemCondiciones.children[1].textContent=simbolos[event].condiciones;
+  $carouselItemCondiciones.children[1].innerHTML=simbolos[event].condiciones;
   $descripcion.textContent=simbolos[event].descripcion;
-  console.log($descripcion)
   $sectionSimbolos.style.display="block";
   $descripcion.style.display="block";
 
