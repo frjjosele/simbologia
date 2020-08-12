@@ -17,8 +17,8 @@ body {
      font-family: 'Muli', sans-serif;
      background: #8f57fd;
      display: flex;
-  flex-wrap: wrap;
-  min-height: 100vh;
+    flex-wrap: wrap;
+    min-height: 100vh;
    }
 
    * {
@@ -176,6 +176,7 @@ footer{
   width: 100%;
   padding-top: 10px;
   text-align: center;
+  align-self: flex-end;
 }
 
 footer .contenedor{
