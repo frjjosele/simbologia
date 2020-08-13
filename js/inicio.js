@@ -22,7 +22,14 @@ function loadDoc(event){
   imagenes.src=simbolos[event].unifilar;
 
   imagenes=encontrarImg($carouselitemMultifilar);
-  imagenes.src=simbolos[event].multifilar;
+  if(simbolos[event].multifilar!=""){
+    
+    imagenes.src=simbolos[event].multifilar;
+  }else{
+    imagenes.src="../images/multifilar/noSimbolo.png"
+  }
+/*   imagenes=encontrarImg($carouselitemMultifilar);
+  imagenes.src=simbolos[event].multifilar; */
 
   $carouselItemCondiciones.children[1].innerHTML=simbolos[event].condiciones;
   $descripcion.textContent=simbolos[event].descripcion;
