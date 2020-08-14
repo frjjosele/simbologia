@@ -1,8 +1,7 @@
 # Simbología eléctrica
 
 Buscador de símbolos electricos. 
-Los símbolos pertenecen al documento "Manual de electricista" que pertenece a la empresa de PLC Madrid.
-[PLC Madrid] (https://www.plcmadrid.es/)
+Los símbolos pertenecen al documento "Manual de electricista" que pertenece a la empresa de [PLC Madrid](https://www.plcmadrid.es/)
 
 
 ## Construido con 🛠️
