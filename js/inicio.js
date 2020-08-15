@@ -26,10 +26,9 @@ function loadDoc(event){
     
     imagenes.src=simbolos[event].multifilar;
   }else{
-    imagenes.src="../images/multifilar/noSimbolo.png"
+    imagenes.src="https://raw.githubusercontent.com/frjjosele/simbologia/master/images/multifilar/noSimbolo.png"
   }
-/*   imagenes=encontrarImg($carouselitemMultifilar);
-  imagenes.src=simbolos[event].multifilar; */
+
 
   $carouselItemCondiciones.children[1].innerHTML=simbolos[event].condiciones;
   $descripcion.textContent=simbolos[event].descripcion;
